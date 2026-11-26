@@ -85,7 +85,7 @@ I MainLoader: patched 0x723012149c: 0x540001a1 -> 0x1400016f
 
 进程稳定，游戏主界面正常，**KILL SHOT 面板直接展开，没有身份验证页**。
 
-![面板](https://raw.githubusercontent.com/USER/REPO/main/screenshots/shot15.png)
+![面板](../screenshots/shot15.png)
 
 ### killshot 模式
 
