@@ -1,5 +1,22 @@
 # TheGhost / kill shot 外挂逆向分析（ChiPROTECT 壳 + 双层卡密）
 
+## ⬇️ 只想用，不想看分析？
+
+**[→ 下载 v1.0.0 部署包](https://github.com/DaiWicked/theghost-game-unlock/releases/latest)**（`killshot.zip` 6.2 MB）
+
+解压后看 **`USAGE.md`**，照你的设备挑一条走：
+
+| 你的情况 | 看哪一节 |
+| --- | --- |
+| 有 root + 官方版 APK | 第 1 章（自动 `install.sh` 或手动替换 3 个文件） |
+| 有 root + kill shot 版 APK | 第 2 章（替换 `libTool.so`） |
+| 没有 root | 第 3 章（重签 APK，需先卸载原版） |
+| 想还原 | 第 4 章（`deploy.sh restore`） |
+
+仓库内 [docs/05-usage.md](docs/05-usage.md) 是同一份手册的在线版。
+
+---
+
 > 对一个"游戏本体 + 内嵌修改器 + 双层服务端卡密"的样本做完整静态/动态分析，
 > 给出可复现的定位方法与最小化补丁（共 3 条指令）。
 >
