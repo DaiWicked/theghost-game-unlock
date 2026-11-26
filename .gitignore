@@ -1,0 +1,48 @@
+# ---- 样本与产物（不发布）----
+*.apk
+*.apks
+*.xapk
+*.bin
+libToolShell.so
+payload_dump.bin
+payload_strings.txt
+payload_interesting.txt
+libtool_dis.txt
+shell.dis
+
+# ---- 工作区 / 中间产物 ----
+work/
+dist/
+增强版/
+enhanced/
+*.log
+*.txt.bak
+
+# ---- 反编译 / 解包产物 ----
+apk/
+java/
+dex/
+meta/
+ref/
+*.smali
+
+# ---- 工具链 ----
+dl/
+android-ndk-*/
+buildtools/
+
+# ---- 编辑器 / 系统 ----
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Python ----
+__pycache__/
+*.pyc
+.venv/
+
+# ---- 大文件护栏 ----
+# 单文件超过 20 MB 的一律不进仓库
