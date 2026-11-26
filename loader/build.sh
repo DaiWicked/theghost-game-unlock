@@ -5,6 +5,9 @@
 #
 set -e
 
+# 无论从哪里调用，都切到脚本所在目录（源文件是相对路径）
+cd "$(dirname "$0")"
+
 NDK="${ANDROID_NDK_HOME:-}"
 if [ -z "$NDK" ]; then
   echo "[!] 请先设置 ANDROID_NDK_HOME（NDK r21+ 即可，推荐 r27c）"
@@ -23,7 +26,7 @@ CC="$TOOLBIN/aarch64-linux-android21-clang"
 
 [ -x "$CC" ] || { echo "[!] 找不到 $CC"; exit 1; }
 
-OUT="$(cd "$(dirname "$0")" && pwd)/../prebuilt"
+OUT="$(pwd)/../prebuilt"
 mkdir -p "$OUT"
 
 echo "[*] CC = $CC"
